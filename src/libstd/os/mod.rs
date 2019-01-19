@@ -47,6 +47,7 @@ cfg_if::cfg_if! {
 #[cfg(target_os = "netbsd")]     pub mod netbsd;
 #[cfg(target_os = "openbsd")]    pub mod openbsd;
 #[cfg(target_os = "solaris")]    pub mod solaris;
+#[cfg(target_os = "illumos")]    pub mod illumos;
 #[cfg(target_os = "emscripten")] pub mod emscripten;
 #[cfg(target_os = "fuchsia")]    pub mod fuchsia;
 #[cfg(target_os = "hermit")]     pub mod hermit;

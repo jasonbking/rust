@@ -12,6 +12,7 @@ use crate::io::ErrorKind;
 #[cfg(all(not(rustdoc), target_os = "macos"))]     pub use crate::os::macos as platform;
 #[cfg(all(not(rustdoc), target_os = "netbsd"))]    pub use crate::os::netbsd as platform;
 #[cfg(all(not(rustdoc), target_os = "openbsd"))]   pub use crate::os::openbsd as platform;
+#[cfg(all(not(rustdoc), target_os = "illumos"))]   pub use crate::os::illumos as platform;
 #[cfg(all(not(rustdoc), target_os = "solaris"))]   pub use crate::os::solaris as platform;
 #[cfg(all(not(rustdoc), target_os = "emscripten"))] pub use crate::os::emscripten as platform;
 #[cfg(all(not(rustdoc), target_os = "fuchsia"))]   pub use crate::os::fuchsia as platform;

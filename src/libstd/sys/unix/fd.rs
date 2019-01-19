@@ -172,6 +172,7 @@ impl FileDesc {
 
     #[cfg(not(any(target_env = "newlib",
                   target_os = "solaris",
+                  target_os = "illumos",
                   target_os = "emscripten",
                   target_os = "fuchsia",
                   target_os = "l4re",
@@ -186,6 +187,7 @@ impl FileDesc {
     }
     #[cfg(any(target_env = "newlib",
               target_os = "solaris",
+              target_os = "illumos",
               target_os = "emscripten",
               target_os = "fuchsia",
               target_os = "l4re",

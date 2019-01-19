@@ -28,6 +28,7 @@ impl Drop for Handler {
           target_os = "dragonfly",
           target_os = "freebsd",
           target_os = "solaris",
+          target_os = "illumos",
           all(target_os = "netbsd", not(target_vendor = "rumprun")),
           target_os = "openbsd"))]
 mod imp {
@@ -141,6 +142,7 @@ mod imp {
               target_os = "freebsd",
               target_os = "netbsd",
               target_os = "openbsd",
+              target_os = "illumos",
               target_os = "solaris"))]
     unsafe fn get_stack() -> libc::stack_t {
         libc::stack_t { ss_sp: get_stackp(), ss_flags: 0, ss_size: SIGSTKSZ }
@@ -186,6 +188,7 @@ mod imp {
               target_os = "dragonfly",
               target_os = "freebsd",
               target_os = "solaris",
+              target_os = "illumos",
               all(target_os = "netbsd", not(target_vendor = "rumprun")),
               target_os = "openbsd")))]
 mod imp {

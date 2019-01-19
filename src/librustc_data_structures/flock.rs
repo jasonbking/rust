@@ -90,7 +90,7 @@ cfg_if! {
             }
         }
 
-        #[cfg(target_os = "solaris")]
+        #[cfg(any(target_os = "solaris", target_os = "illumos"))]
         mod os {
             #[repr(C)]
             pub struct flock {
